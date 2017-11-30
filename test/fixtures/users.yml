@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  title: MyString
+  prof_pic: MyString
+  rating: 1
+
+two:
+  name: MyString
+  title: MyString
+  prof_pic: MyString
+  rating: 1
