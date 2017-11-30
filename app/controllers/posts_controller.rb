@@ -5,11 +5,25 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    @array = Array.new
+    @posts.each{ |post| 
+      @output = Hash.new
+      @user = User.find(post.user_id)
+      post.attributes.each {|k,n| @output[k] = n }
+      @user.attributes.each {|k,n| @output[k] = n }
+      @array.push(@output)
+    }
+    render :json => @array
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @output = Hash.new
+    @user = User.find(@post.user_id)
+    @post.attributes.each {|k,n| @output[k] = n }
+    @user.attributes.each {|k,n| @output[k] = n }
+    render :json => @output
   end
 
   # GET /posts/new
