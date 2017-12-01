@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   belongs_to :user
   has_many :users, through: :appointments
+  has_many :qualifications
   
   def self.init(post)
     Post.create!(user_id: post[:user_id], image: post[:image], price: post[:price], rating: post[:rating], subject: post[:subject], description: post[:description])

@@ -23,3 +23,11 @@ posts = [ {user_id: 1, image: "https://static1.squarespace.com/static/557ca09ae4
 posts.each do |post|
   Post.init(post)
 end
+
+qualifications = [ {post_id: 1, title: "GSI at CS61B in 2007"},
+                  {post_id: 2, title: "Scored A in Maths & Statistics"},
+                  {post_id: 3, title: "Founder of my own startup"}]
+
+qualifications.each do |q|
+  Qualification.init(q)
+end

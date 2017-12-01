@@ -12,6 +12,8 @@ class PostsController < ApplicationController
       @user = User.find(post.user_id)
       post.attributes.each {|k,n| @output[k] = n }
       @user.attributes.each {|k,n| @output[k] = n }
+      @qualifications = post.qualifications
+      @qualifications.each {|q|@output["qualification title"] = q.title }
       @array.push(@output)
     }
     render :json => @array
