@@ -13,7 +13,7 @@ class PostsController < ApplicationController
       post.attributes.each {|k,n| @output[k] = n }
       @user.attributes.each {|k,n| @output[k] = n }
       @qualifications = post.qualifications
-      @qualifications.each {|q|@output["qualifications"] = q.title }
+      @qualifications.each{|q| @output[q.title] = q.description}
       @array.push(@output)
     }
     render :json => @array
@@ -42,6 +42,10 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
+    @qualifications = qualification_params
+    @qualifications.each do |k,v|
+      @post.qualifications.create!(title: k, description: v)
+    end
 
     respond_to do |format|
       if @post.save
@@ -87,5 +91,9 @@ class PostsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
       params.require(:post).permit(:user_id, :image, :price, :subject, :description, :rating)
+    end
+    
+    def qualification_params
+      params.require(:post).permit(:qualifications)
     end
 end

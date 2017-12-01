@@ -15,18 +15,18 @@ users.each do |user|
   User.init(user)
 end
 
-posts = [ {user_id: 1, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 30, rating:5, subject:"Math Statistics 70A", description:"Seow Wen Jun Sucks"},
-          {user_id: 2, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 1000, rating:4, subject:"Machine Learning", description:"Seow Wen Jun Sucks Balls"},
-          {user_id: 3, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 10, rating:1, subject:"CS 169", description:"SEOWWWWWWWW"}
+posts = [ {user_id: 1, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 30, rating:5, subject:"Math Statistics 70A", description:"Seow Wen Jun Sucks",category: "Academics"},
+          {user_id: 2, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 1000, rating:4, subject:"Machine Learning", description:"Seow Wen Jun Sucks Balls",category: "Academics"},
+          {user_id: 3, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 10, rating:1, subject:"CS 169", description:"SEOWWWWWWWW",category: "Academics"}
         ]
 
 posts.each do |post|
   Post.init(post)
 end
 
-qualifications = [ {post_id: 1, title: "GSI at CS61B in 2007"},
-                  {post_id: 2, title: "Scored A in Maths & Statistics"},
-                  {post_id: 3, title: "Founder of my own startup"}]
+qualifications = [ {post_id: 1, title: "GSI",description: "GSI at CS61B in 2007"},
+                  {post_id: 2, title: "A+", description: "Scored A in Maths & Statistics"},
+                  {post_id: 3, title: "Experience", description: "Founder of my own startup"}]
 
 qualifications.each do |q|
   Qualification.init(q)

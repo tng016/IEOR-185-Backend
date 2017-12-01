@@ -6,6 +6,7 @@ class CreatePosts < ActiveRecord::Migration
       t.integer :price
       t.string :subject
       t.string :description
+      t.string :category
       t.integer :rating
 
       t.timestamps null: false

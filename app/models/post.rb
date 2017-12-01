@@ -4,6 +4,6 @@ class Post < ActiveRecord::Base
   has_many :qualifications
   
   def self.init(post)
-    Post.create!(user_id: post[:user_id], image: post[:image], price: post[:price], rating: post[:rating], subject: post[:subject], description: post[:description])
+    Post.create!(user_id: post[:user_id], image: post[:image], price: post[:price], rating: post[:rating], subject: post[:subject], description: post[:description],category: post[:category])
   end
 end

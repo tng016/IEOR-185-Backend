@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20171201062958) do
     t.integer  "price"
     t.string   "subject"
     t.string   "description"
+    t.string   "category"
     t.integer  "rating"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
@@ -39,9 +40,10 @@ ActiveRecord::Schema.define(version: 20171201062958) do
 
   create_table "qualifications", force: :cascade do |t|
     t.string   "title"
+    t.string   "description"
     t.integer  "post_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   add_index "qualifications", ["post_id"], name: "index_qualifications_on_post_id"
