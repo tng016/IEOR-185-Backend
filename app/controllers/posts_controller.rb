@@ -8,12 +8,7 @@ class PostsController < ApplicationController
     @posts = Post.all
     @array = Array.new
     @posts.each{ |post| 
-      @output = Hash.new
-      @user = User.find(post.user_id)
-      post.attributes.each {|k,n| @output[k] = n }
-      @user.attributes.each {|k,n| @output[k] = n }
-      @qualifications = post.qualifications
-      @qualifications.each{|q| @output[q.title] = q.description}
+      @output = post.genHash()
       @array.push(@output)
     }
     render :json => @array
@@ -22,10 +17,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @output = Hash.new
-    @user = User.find(@post.user_id)
-    @post.attributes.each {|k,n| @output[k] = n }
-    @user.attributes.each {|k,n| @output[k] = n }
+    @output = @post.genHash()
     render :json => @output
   end
 
@@ -42,15 +34,15 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-    @qualifications = qualification_params
-    @qualifications.each do |k,v|
-      @post.qualifications.create!(title: k, description: v)
-    end
 
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
+         @qualifications = qualification_params
+          @qualifications.each do |k,v|
+            @post.qualifications.create!(title: k, description: v)
+          end
       else
         format.html { render :new }
         format.json { render json: @post.errors, status: :unprocessable_entity }
@@ -90,10 +82,12 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:user_id, :image, :price, :subject, :description, :rating)
+      params.require(:post).permit(:user_id, :image, :price, :subject, :description, :rating, :qualifications)
+    end
+  
+    def qualification_params
+      params.require(:qualifications).permit(:GSI, :Experience, :Certified, :Aplus)
     end
     
-    def qualification_params
-      params.require(:post).permit(:qualifications)
-    end
+    
 end
