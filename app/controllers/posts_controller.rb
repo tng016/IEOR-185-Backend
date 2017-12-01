@@ -13,7 +13,7 @@ class PostsController < ApplicationController
       post.attributes.each {|k,n| @output[k] = n }
       @user.attributes.each {|k,n| @output[k] = n }
       @qualifications = post.qualifications
-      @qualifications.each {|q|@output["qualification title"] = q.title }
+      @qualifications.each {|q|@output["qualifications"] = q.title }
       @array.push(@output)
     }
     render :json => @array
