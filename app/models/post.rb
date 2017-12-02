@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
   has_many :qualifications
   
   def self.init(post)
-    Post.create!(user_id: post[:user_id], image: post[:image], price: post[:price], rating: post[:rating], subject: post[:subject], description: post[:description],category: post[:category],post_image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w")
+    Post.create!(user_id: post[:user_id], image: post[:image], price: post[:price], rating: post[:rating], subject: post[:subject], description: post[:description],category: post[:category])
   end
   
   def genHash()
