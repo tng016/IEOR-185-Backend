@@ -15,6 +15,7 @@ class Post < ActiveRecord::Base
       @output["post_description"] = self.description
       @output["post_price"] = self.price
       @output["post_category"] = self.category
+      @output["post_date"] = self.created_at
       @user = User.find(self.user_id)
       @output["user_id"] = @user.id
       @output["user_name"] = @user.name
