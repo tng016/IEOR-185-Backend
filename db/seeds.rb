@@ -15,9 +15,9 @@ users.each do |user|
   User.init(user)
 end
 
-posts = [ {user_id: 1, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 30, rating:5, subject:"Math Statistics 70A consultation", description:"",category: "Academics"},
-          {user_id: 2, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 40, rating:4, subject:"Machine Learning Crash Course", description:"",category: "Academics"},
-          {user_id: 3, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 30, rating:4, subject:"CS 61B tutoring", description:"",category: "Academics"}
+posts = [ {user_id: 1, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 30, rating:5, subject:"Math Statistics 70A consultation", description:"Used to be a GSI for Statistics 70 and looking to earn some spare cash. Available to meet anytime on Tuesdays & Thursdays anywhere on campus.",category: "Academics"},
+          {user_id: 2, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 40, rating:4, subject:"Machine Learning Crash Course", description:"Need some help for the hardest CS course in Cal? Available to meet in the afternoon on Monday,Tuesdays & Thursdays at Unit 1.",category: "Academics"},
+          {user_id: 3, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 30, rating:4, subject:"CS 61B tutoring", description:"Code your way to an A! Location and Timing Flexible",category: "Academics"}
         ]
 
 posts.each do |post|
