@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :title
       t.string :prof_pic
       t.integer :rating
+      t.string :description
 
       t.timestamps null: false
     end

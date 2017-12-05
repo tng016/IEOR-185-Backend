@@ -22,6 +22,7 @@ class Post < ActiveRecord::Base
       @output["user_title"] = @user.title
       @output["user_prof_pic"] = @user.prof_pic
       @output["user_rating"] = @user.rating
+      @output["user_description"] = @user.description
       @qualifications = self.qualifications
       @qualifications.each{|q| @output["qualification_"+q.title] = q.description}
       return @output

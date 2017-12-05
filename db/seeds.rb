@@ -6,9 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-users = [ {name: "Nathan Blake", title: "Master Tutor", prof_pic: "https://upload.wikimedia.org/wikipedia/commons/1/13/Daniel_Ingram_Profile.png", rating:5},
-          {name: "Russell Peters", title: "Grand Master Tutor", prof_pic: "https://ocw.mit.edu/faculty/michael-cuthbert/cuthbert.png", rating:4},
-          {name: "Courtney Williams", title: "Novice Tutor", prof_pic: "https://www.swissinfo.ch/blob/42390484/57ab7d6b67a49c4e28fee04d4589c009/profile-image-veronica-devore-data.png", rating:4}
+users = [ {name: "Nathan Blake", title: "Master Tutor", description: "I like math and I really enjoy statistics", prof_pic: "https://upload.wikimedia.org/wikipedia/commons/1/13/Daniel_Ingram_Profile.png", rating:5},
+          {name: "Russell Peters", title: "Grand Master Tutor", description: "ML is the key to the future", prof_pic: "https://ocw.mit.edu/faculty/michael-cuthbert/cuthbert.png", rating:4},
+          {name: "Courtney Williams", title: "Novice Tutor", description: "Coding since 1994", prof_pic: "https://www.swissinfo.ch/blob/42390484/57ab7d6b67a49c4e28fee04d4589c009/profile-image-veronica-devore-data.png", rating:4}
         ]
 
 users.each do |user|
@@ -33,4 +33,10 @@ qualifications = [ {post_id: 3, title: "GSI",description: "GSI at CS61B in 2007"
 
 qualifications.each do |q|
   Qualification.init(q)
+end
+
+appointments = [ {post_id: 1, user_id: 2, start_time: "2017-12-12 12:12:12",end_time: "2017-12-12 13:12:12",location: "Cory Hall"}]
+
+appointments.each do |q|
+  Appointment.init(q)
 end

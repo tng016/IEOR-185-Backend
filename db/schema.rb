@@ -16,7 +16,10 @@ ActiveRecord::Schema.define(version: 20171201062958) do
   create_table "appointments", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "post_id"
-    t.datetime "time"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.string   "location"
+    t.boolean  "has_seen"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -53,8 +56,9 @@ ActiveRecord::Schema.define(version: 20171201062958) do
     t.string   "title"
     t.string   "prof_pic"
     t.integer  "rating"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

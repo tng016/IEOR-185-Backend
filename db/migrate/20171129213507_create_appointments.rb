@@ -3,7 +3,10 @@ class CreateAppointments < ActiveRecord::Migration
     create_table :appointments do |t|
       t.references :user, index: true, foreign_key: true
       t.references :post, index: true, foreign_key: true
-      t.datetime :time
+      t.datetime :start_time
+      t.datetime :end_time
+      t.string :location
+      t.boolean :has_seen
 
       t.timestamps null: false
     end
