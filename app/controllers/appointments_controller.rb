@@ -15,11 +15,12 @@ class AppointmentsController < ApplicationController
 
   # GET /appointments/new
   def new
-    @appointment = Appointment.new
+    @appointments = Appointment.all.where(has_seen: false)
   end
 
   # GET /appointments/1/edit
   def edit
+    
   end
 
   # POST /appointments
