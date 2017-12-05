@@ -17,7 +17,10 @@ end
 
 posts = [ {user_id: 1, image: "https://static1.squarespace.com/static/557ca09ae4b03871291321dc/t/56886d370e4c11c9349b1dc7/1451781544844/academics.png?format=1500w", price: 30, rating:5, subject:"Math Statistics 70A consultation", description:"Used to be a GSI for Statistics 70 and looking to earn some spare cash. Available to meet anytime on Tuesdays & Thursdays anywhere on campus.",category: "Academics"},
           {user_id: 2, image: "https://fthmb.tqn.com/e2z3O8I2sYJctP8uBt1TwEgnQzQ=/2122x1415/filters:fill(auto,1)/Studying-56a945f83df78cf772a55e31.jpg", price: 40, rating:4, subject:"Machine Learning Crash Course", description:"Need some help for the hardest CS course in Cal? Available to meet in the afternoon on Monday,Tuesdays & Thursdays at Unit 1.",category: "Academics"},
-          {user_id: 3, image: "https://i0.wp.com/www.oxbridgeacademy.edu.za/blog/wp-content/uploads/2015/07/CN63QSUO8C.jpg?resize=1280%2C640&ssl=1", price: 30, rating:4, subject:"CS 61B tutoring", description:"Code your way to an A! Location and Timing Flexible",category: "Academics"}
+          {user_id: 3, image: "https://i0.wp.com/www.oxbridgeacademy.edu.za/blog/wp-content/uploads/2015/07/CN63QSUO8C.jpg?resize=1280%2C640&ssl=1", price: 30, rating:4, subject:"CS 61B tutoring", description:"Code your way to an A! Location and Timing Flexible",category: "Academics"},
+          {user_id: 1, image: "https://recsports.berkeley.edu/wp-content/uploads/2016/06/Schedules-Lap-Swim.jpg", price: 50, rating:5, subject:"Beginner Swimming Lessons", description:"Learn how to be the next Michael Phelps from a varsity swimmer! Fun guranteed (:",category: "Sports"},
+          {user_id: 2, image: "https://www.bleedingcool.com/wp-content/uploads/2011/11/animal-drumming.jpg", price: 35, rating:4, subject:"Learn to Drum", description:"Ever wanted to learn to Jam to destress from work?",category: "Music"},
+          {user_id: 3, image: "https://cdn.jamieoliver.com/news-and-features/features/wp-content/uploads/sites/2/2016/10/piping_coolcakes-1024x683.jpg", price: 30, rating:4, subject:"Baking Lessons!", description:"Sugar, Spice and Everything Nice! Ingredients provided!",category: "Miscellaneous"}
         ]
 
 posts.each do |post|
