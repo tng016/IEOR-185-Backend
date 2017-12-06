@@ -6,6 +6,12 @@ class AppointmentsController < ApplicationController
   # GET /appointments.json
   def index
     @appointments = Appointment.all
+    @array = Array.new
+    @appointments.each{ |post| 
+      @output = post.genHash()
+      @array.push(@output)
+    }
+    render :json => @array
   end
 
   # GET /appointments/1

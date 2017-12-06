@@ -20,7 +20,8 @@ posts = [ {user_id: 1, image: "https://static1.squarespace.com/static/557ca09ae4
           {user_id: 3, image: "https://i0.wp.com/www.oxbridgeacademy.edu.za/blog/wp-content/uploads/2015/07/CN63QSUO8C.jpg?resize=1280%2C640&ssl=1", price: 30, rating:4, subject:"CS 61B tutoring", description:"Code your way to an A! Location and Timing Flexible",category: "Academics"},
           {user_id: 1, image: "https://recsports.berkeley.edu/wp-content/uploads/2016/06/Schedules-Lap-Swim.jpg", price: 50, rating:5, subject:"Beginner Swimming Lessons", description:"Learn how to be the next Michael Phelps from a varsity swimmer! Fun guranteed (:",category: "Sports"},
           {user_id: 2, image: "https://www.bleedingcool.com/wp-content/uploads/2011/11/animal-drumming.jpg", price: 35, rating:4, subject:"Learn to Drum", description:"Ever wanted to learn to Jam to destress from work?",category: "Music"},
-          {user_id: 3, image: "https://cdn.jamieoliver.com/news-and-features/features/wp-content/uploads/sites/2/2016/10/piping_coolcakes-1024x683.jpg", price: 30, rating:4, subject:"Baking Lessons!", description:"Sugar, Spice and Everything Nice! Ingredients provided!",category: "Miscellaneous"}
+          {user_id: 3, image: "https://cdn.jamieoliver.com/news-and-features/features/wp-content/uploads/sites/2/2016/10/piping_coolcakes-1024x683.jpg", price: 30, rating:4, subject:"Baking Lessons!", description:"Sugar, Spice and Everything Nice! Ingredients provided!",category: "Miscellaneous"},
+          {user_id: 3, image: "https://agc.creativelive.com/agc/pages/channel-hero/Photo_Hero_1600x900.jpg", price: 30, rating:4, subject:"Photography with Cal photographic society", description:"Learn from the best on campus. Bring your own camera",category: "Interests"}
         ]
 
 posts.each do |post|
