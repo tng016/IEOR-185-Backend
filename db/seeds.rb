@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-users = [ {name: "Nathan Blake", title: "Master Tutor", description: "I like math and I really enjoy statistics", prof_pic: "https://upload.wikimedia.org/wikipedia/commons/1/13/Daniel_Ingram_Profile.png", rating:5},
-          {name: "Russell Peters", title: "Grand Master Tutor", description: "ML is the key to the future", prof_pic: "https://ocw.mit.edu/faculty/michael-cuthbert/cuthbert.png", rating:4},
+users = [ {name: "Nathan Blake", title: "Master Tutor", description: "Hello! I'm Nathan, a 3rd year studying Math from New York. When I'm not busy with school, I'm probably swimming, working on personal projects, or hiking to enjoy some cool view. This past summer I also started getting into photography! Stats 70 was one of my favorite classes and I'm gonna make sure it's one of yours too.", prof_pic: "https://upload.wikimedia.org/wikipedia/commons/1/13/Daniel_Ingram_Profile.png", rating:5},
+          {name: "Russell Swift", title: "Grand Master Tutor", description: "ML is the key to the future", prof_pic: "https://ocw.mit.edu/faculty/michael-cuthbert/cuthbert.png", rating:4},
           {name: "Courtney Williams", title: "Novice Tutor", description: "Coding since 1994", prof_pic: "https://www.swissinfo.ch/blob/42390484/57ab7d6b67a49c4e28fee04d4589c009/profile-image-veronica-devore-data.png", rating:4}
         ]
 
