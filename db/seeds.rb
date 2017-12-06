@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-users = [ {name: "Wen Jun Seow", title: "Master Tutor", description: "Hello! I'm Wen JUn, a 3rd year studying Math. When I'm not busy with school, I'm probably hiking to enjoy some cool view. Stats 70 was one of my favorite classes and I'm gonna make sure it's one of yours too.", prof_pic: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwEAAAAJGEzZDU2ZDI4LThhNzMtNDExNS1hOGRmLWFiNTNhODkwZWRiYQ.jpg", rating:5},
+users = [ {name: "Wen Jun Seow", title: "Master Tutor", description: "Hello! I'm Wen Jun, a 3rd year studying Math. When I'm not busy with school, I'm probably hiking to enjoy some cool view. Stats 70 was one of my favorite classes and I'm gonna make sure it's one of yours too.", prof_pic: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwEAAAAJGEzZDU2ZDI4LThhNzMtNDExNS1hOGRmLWFiNTNhODkwZWRiYQ.jpg", rating:5},
           {name: "Ng Tze Yang", title: "Grand Master Tutor", description: "ML is the key to the future", prof_pic: "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAs3AAAAJDdmYWU1NTk5LTVhMDMtNDU4Yy05MTY0LTFlZjAyYTZjNTc1NQ.jpg", rating:4},
           {name: "Courtney Williams", title: "Novice Tutor", description: "Coding since 1994", prof_pic: "https://www.swissinfo.ch/blob/42390484/57ab7d6b67a49c4e28fee04d4589c009/profile-image-veronica-devore-data.png", rating:4}
         ]
