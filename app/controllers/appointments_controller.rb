@@ -22,6 +22,12 @@ class AppointmentsController < ApplicationController
   # GET /appointments/new
   def new
     @appointments = Appointment.all.where(has_seen: false)
+    @array = Array.new
+    @appointments.each{ |post| 
+      @output = post.genHash()
+      @array.push(@output)
+    }
+    render :json => @array
   end
 
   # GET /appointments/1/edit
